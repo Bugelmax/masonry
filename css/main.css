@@ -20,7 +20,7 @@ body{background: #000;}
 .item {
 	width: 240px;
 	height: 250px;
-	transition: .4s
+	
 }
 .item.wider{
 	width: 480px;
@@ -28,8 +28,4 @@ body{background: #000;}
 .item img {
 	height: inherit;
 	width: inherit;
-}
-
-.item:nth-child(5n-2){
-	width: 480px;
 }

@@ -113,30 +113,30 @@ $(document).ready(function(){
 	$(window).resize(function(){
         if ($(window).width() <= '960'){
             $('.masonry-container').find('.wider').removeClass('wider');
-            $('.masonry-container').find('.item:nth-child(2), .item:last-child').addClass('wider');
-			
+            $('.masonry-container').find('.item:nth-child(2),.item:nth-child(3),.item:nth-child(6),.item:nth-child(7),.item:last-child').addClass('wider');
         } 
-  //       else {
-		// 	$('.masonry-container').find('.wider').removeClass('wider');
-		// 	$('.masonry-container').find('.item:nth-child(3), .item:nth-child(8)').addClass('wider');
-		// };
 		if ($(window).width() <= '735'){
             $('.masonry-container').find('.wider').removeClass('wider');
-            $('.masonry-container').find('.item:nth-child(1), .item:last-child').addClass('wider');
-			
+            $('.masonry-container').find('.item:nth-child(1),.item:nth-child(4), .item:nth-child(7),.item:last-child').addClass('wider');
         } 
-  //       else {
-		//  $('.masonry-container').find('.wider').removeClass('wider');
-		// 	$('.masonry-container').find('.item:nth-child(2), .item:last-child').addClass('wider');
-		// };
+
 		if ($(window).width() <= '500'){
             $('.masonry-container').find('.wider').removeClass('wider');
             $('.item').css('margin', '0 auto');
-			
         }
-  //       else {
- 	// 		$('.masonry-container').find('.wider').removeClass('wider');
-  //       	$('.masonry-container').find('.item:nth-child(1), .item:last-child').addClass('wider');
-		// }
-	})
-})
+	});
+// 	$(window).resize(function(){
+//         if ($(window).width() >= '960'){
+//             $('.masonry-container').find('.wider').removeClass('wider');
+//             $('.masonry-container').find('.item:nth-child(3), .item:nth-last-child(2)').addClass('wider');
+//         } 
+// 		if ($(window).width() >= '735'){
+//             $('.masonry-container').find('.wider').removeClass('wider');
+//             $('.masonry-container').find('.item:nth-child(2), .item:nth-last-child(5)').addClass('wider');
+//         } 
+// 		if ($(window).width() >= '500'){
+//             $('.masonry-container').find('.wider').removeClass('wider');
+//             $('.masonry-container').find('.item:nth-child(1), .item:last-child').addClass('wider');
+//         }
+// 	});
+});
